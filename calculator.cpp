@@ -71,21 +71,29 @@ void reverse(std::vector<std::string> &stack) {
 }
 
 void repeat(std::deque<std::string> &tokens, std::vector<std::string> &stack) {
-    int rep = std::stoi(stack.back());
+    int reps = std::stoi(stack.back());
     stack.pop_back();
+
+    int count = 1;
     std::vector<std::string> tmp;
 
-    while (tokens.front() != "endrepeat") {
-        tmp.push_back(tokens[0]);
+    while (count > 0) {
+        if (tokens.front() == "repeat") {
+            count += 1;
+        } else if (tokens.front() == "endrepeat") {
+            count -= 1;
+            if (count == 0)
+                break;
+        }
+        tmp.push_back(tokens.front());
         tokens.pop_front();
     }
-    tokens.pop_front();
 
-    for (int i = 0; i < rep; ++i) {
-        for (auto it = tmp.rbegin(); it != tmp.rend(); it++) {
-            tokens.push_front(*it);
-        }
+    for (int i = 0; i < reps; ++i) {
+        std::copy(tmp.rbegin(), tmp.rend(), std::front_inserter(tokens));
     }
+
+
 }
 
 int main(int argc, char* argv[]) {
