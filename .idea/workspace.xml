@@ -12,9 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cfd4ee1-e504-4e54-b026-ed3173444192" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calculator" afterPath="$PROJECT_DIR$/calculator" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calculator.cpp" afterPath="$PROJECT_DIR$/calculator.cpp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.txt" afterPath="$PROJECT_DIR$/test.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,14 +38,18 @@
       <file leaf-file-name="calculator.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/calculator.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="301">
-              <caret line="85" column="22" lean-forward="true" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
+            <state relative-caret-position="285">
+              <caret line="144" column="1" lean-forward="true" selection-start-line="144" selection-start-column="1" selection-end-line="144" selection-end-column="1" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#92#150#0" expanded="false" />
+                <element signature="e#152#229#0" expanded="false" />
                 <element signature="e#239#253#0" expanded="true" />
                 <element signature="e#231#1202#0" expanded="false" />
                 <element signature="e#1204#1664#0" expanded="false" />
                 <element signature="e#1666#1821#0" expanded="false" />
+                <element signature="e#1823#2439#0" expanded="false" />
+                <element signature="e#2441#3971#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -336,12 +338,12 @@
       <option name="presentableId" value="Default" />
       <updated>1501391626307</updated>
       <workItem from="1501391628451" duration="14958000" />
-      <workItem from="1502107492502" duration="12273000" />
+      <workItem from="1502107492502" duration="13089000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27231000" />
+    <option name="totallyTimeSpent" value="28047000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -454,14 +456,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/calculator.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="301">
-          <caret line="85" column="22" lean-forward="true" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
+        <state relative-caret-position="285">
+          <caret line="144" column="1" lean-forward="true" selection-start-line="144" selection-start-column="1" selection-end-line="144" selection-end-column="1" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#92#150#0" expanded="false" />
+            <element signature="e#152#229#0" expanded="false" />
             <element signature="e#239#253#0" expanded="true" />
             <element signature="e#231#1202#0" expanded="false" />
             <element signature="e#1204#1664#0" expanded="false" />
             <element signature="e#1666#1821#0" expanded="false" />
+            <element signature="e#1823#2439#0" expanded="false" />
+            <element signature="e#2441#3971#0" expanded="false" />
           </folding>
         </state>
       </provider>

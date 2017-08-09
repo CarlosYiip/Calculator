@@ -92,8 +92,6 @@ void repeat(std::deque<std::string> &tokens, std::vector<std::string> &stack) {
     for (int i = 0; i < reps; ++i) {
         std::copy(tmp.rbegin(), tmp.rend(), std::front_inserter(tokens));
     }
-
-
 }
 
 int main(int argc, char* argv[]) {
