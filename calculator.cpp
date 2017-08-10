@@ -50,17 +50,19 @@ void operation(Lambda func, std::vector<std::string> &stack, char op) {
 void sqrt(std::vector<std::string> &stack) {
     std::string s = stack.back();
     stack.pop_back();
-    double res;
+    std::string new_s;
+
     if (isDouble(s)) {
         double o = std::stod(s);
-        res = sqrt(o);
+        double res = sqrt(o);
+        new_s = std::to_string(res);
         std::cout << "sqrt " << o << " = " << res << '\n';
     } else {
         int o = std::stoi(s);
-        res = sqrt(o);
+        int res = int(sqrt(o));
+        new_s = std::to_string(res);
         std::cout << "sqrt " << o << " = " << res << '\n';
     }
-    std::string new_s = std::to_string(res);
     stack.push_back(new_s);
 }
 
