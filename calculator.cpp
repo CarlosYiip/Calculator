@@ -59,7 +59,7 @@ void sqrt(std::vector<std::string> &stack) {
         std::cout << "sqrt " << o << " = " << res << '\n';
     } else {
         int o = std::stoi(s);
-        int res = int(sqrt(o));
+        int res = (int)(sqrt(o));
         new_s = std::to_string(res);
         std::cout << "sqrt " << o << " = " << res << '\n';
     }
