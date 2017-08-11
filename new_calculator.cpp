@@ -4,13 +4,9 @@
 #include <cmath>
 #include <algorithm>
 
-bool isNumber(std::string s) {
-    return isdigit(s[0]);
-}
+bool isNumber(std::string s) { return isdigit(s[0]); }
 
-bool isDouble(std::string s) {
-    return s.find('.') != std::string::npos;
-}
+bool isDouble(std::string s) { return s.find('.') != std::string::npos; }
 
 template <class lambda>
 void binary_operation(std::vector<bool> &double_or_int, std::vector<double> &doubles, std::vector<int> &ints, lambda func, char op) {
@@ -77,7 +73,7 @@ void square(std::vector<bool> &double_or_int, std::vector<double> &doubles, std:
         doubles.back() = res;
     } else {
         int n = ints.back();
-        int res = (int) sqrt(n);
+        int res = static_cast<int>(sqrt(n));
         std::cout << "sqrt " << n << " = " << res << '\n';
         ints.back() = res;
     }
