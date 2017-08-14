@@ -1,7 +1,1 @@
-2
-
-2 repeat
-
-2 mult
-
-endrepeat
+-2 -2.0 mult

@@ -4,7 +4,7 @@
 #include <cmath>
 #include <algorithm>
 
-bool isNumber(std::string s) { return isdigit(s[0]); }
+bool isNumber(std::string s) { return isdigit(s[0]) or (s[0] == '-'); }
 
 bool isDouble(std::string s) { return s.find('.') != std::string::npos; }
 
