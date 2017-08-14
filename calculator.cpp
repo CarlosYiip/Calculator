@@ -4,12 +4,12 @@
 #include <cmath>
 #include <algorithm>
 
-bool isNumber(std::string s) { return isdigit(s[0]) or (s[0] == '-'); }
+bool isNumber(const std::string &s) { return isdigit(s[0]) or (s[0] == '-'); }
 
-bool isDouble(std::string s) { return s.find('.') != std::string::npos; }
+bool isDouble(const std::string &s) { return s.find('.') != std::string::npos; }
 
 template <class lambda>
-void binary_operation(std::vector<bool> &double_or_int, std::vector<double> &doubles, std::vector<int> &ints, lambda func, char op) {
+void binary_operation(std::vector<bool> &double_or_int, std::vector<double> &doubles, std::vector<int> &ints, const lambda &func, const char &op) {
 	// First determine the types of the two operands respectively
     bool t1 = double_or_int.back();
     double_or_int.pop_back();
@@ -111,7 +111,7 @@ void pop(std::vector<bool> &double_or_int, std::vector<double> &doubles, std::ve
         ints.pop_back();
 }
 
-void readToken(std::string s, std::vector<bool> &double_or_int, std::vector<double> &doubles, std::vector<int> &ints) {
+void readToken(const std::string &s, std::vector<bool> &double_or_int, std::vector<double> &doubles, std::vector<int> &ints) {
     if (isNumber(s)) {
     	// If the next number is a double push the next number into the "doubles" 
     	// Otherwise, push the next number into the "ints"
@@ -144,7 +144,7 @@ void readToken(std::string s, std::vector<bool> &double_or_int, std::vector<doub
     }
 }
 
-void repeat(std::ifstream &in, std::string s, std::vector<bool> &double_or_int, std::vector<double> &doubles, std::vector<int> &ints) {
+void repeat(std::ifstream &in, std::string &s, std::vector<bool> &double_or_int, std::vector<double> &doubles, std::vector<int> &ints) {
     // First determine the number of repetitions
     bool t = double_or_int.back();
     double_or_int.pop_back();
