@@ -59,7 +59,7 @@ void binary_operation(std::vector<bool> &double_or_int, std::vector<double> &dou
     }
 }
 
-void square(std::vector<bool> &double_or_int, std::vector<double> &doubles, std::vector<int> &ints) {
+void square(const std::vector<bool> &double_or_int, std::vector<double> &doubles, std::vector<int> &ints) {
 	// Need to determine what is the type of the number to be squared
     bool t = double_or_int.back();
 	// The type of the result should be the same as the operand's. 
